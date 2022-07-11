@@ -1,0 +1,62 @@
+
+package com.xnett.fasyl.deploy;
+
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlType;
+
+
+/**
+ * <p>Classe Java pour fundTransferMobileToAccountResponse complex type.
+ * 
+ * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
+ * 
+ * <pre>
+ * &lt;complexType name="fundTransferMobileToAccountResponse">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="return" type="{http://deploy.fasyl.xnett.com/}fundTransferMobileToAccountXResponse" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
+ */
+@XmlAccessorType(XmlAccessType.FIELD)
+@XmlType(name = "fundTransferMobileToAccountResponse", propOrder = {
+    "_return"
+})
+public class FundTransferMobileToAccountResponse {
+
+    @XmlElement(name = "return")
+    protected FundTransferMobileToAccountXResponse _return;
+
+    /**
+     * Obtient la valeur de la propriété return.
+     * 
+     * @return
+     *     possible object is
+     *     {@link FundTransferMobileToAccountXResponse }
+     *     
+     */
+    public FundTransferMobileToAccountXResponse getReturn() {
+        return _return;
+    }
+
+    /**
+     * Définit la valeur de la propriété return.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link FundTransferMobileToAccountXResponse }
+     *     
+     */
+    public void setReturn(FundTransferMobileToAccountXResponse value) {
+        this._return = value;
+    }
+
+}

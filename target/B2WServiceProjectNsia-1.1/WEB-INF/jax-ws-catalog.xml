@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="file:/C:/Users/SOCITECH-/Documents/EASYMBANK/B2W-Specifications-v1.1/B2W-Specifications-v1.1/wsdl/Bank-Partner-API/partner.wsdl" uri="wsdl/partner.wsdl"/>
+<!--    <system systemId="file:/C:/Users/SOCITECH-/Documents/NetBeansProjects/B2WServiceProject/src/wsdl/OtherService.wsdl" uri="wsdl/OtherService.wsdl"/>
+    <system systemId="file:/C:/Users/SOCITECH-/Documents/OtherService.wsdl" uri="wsdl/OtherService.wsdl"/>-->
+    <system systemId="file:/C:/Users/alex/Documents/AIRTEL/BANKWSDL.wsdl" uri="wsdl/BANKWSDL.wsdl"/>
+    <system systemId="file:/C:/Users/alex/Documents/AIRTEL/XnettService.xsd" uri="wsdl/XnettService.xsd"/>
+    <system systemId="file:/C:/Users/alex/Downloads/API_Finacle_/apifinacle/wbs.wsdl" uri="wsdl/wbs.wsdl"/>
+    <system systemId="file:/C:/Users/alex/Downloads/API_Finacle_/apifinacle/wbs.xsd" uri="wsdl/wbs.xsd"/>
+    <system systemId="file:/C:/Users/alexa/Documents/EASYMBANK/T24%20TEMENOS%20SERVICES/servises.wsdl" uri="wsdl/servises.wsdl"/>
+    <system systemId="file:/C:/Users/alexa/Documents/EASYMBANK/T24%20TEMENOS%20SERVICES/xsd1.xsd" uri="wsdl/xsd1.xsd"/>
+    <system systemId="file:/C:/Users/alexa/Documents/EASYMBANK/T24%20TEMENOS%20SERVICES/xsd2.xsd" uri="wsdl/xsd2.xsd"/>
+    <system systemId="file:/C:/Users/alexa/Documents/EASYMBANK/T24%20TEMENOS%20SERVICES/xsd3.xsd" uri="wsdl/xsd3.xsd"/>
+    <system systemId="file:/C:/Users/alexa/Documents/EASYMBANK/BABF/Standard.wsdl" uri="wsdl/Standard.wsdl"/>
+    <system systemId="file:/C:/Users/alexa/Documents/EASYMBANK/BABF/Standard.xsd" uri="wsdl/Standard.xsd"/>
+    <system systemId="https://mbank.bsicmali.ml/B2WBSICOrangeML/OtherWebServiceService?wsdl" uri="wsdl/mbank.bsicmali.ml/B2WBSICOrangeML/OtherWebServiceService.wsdl"/>
+    <system systemId="https://mbank.bsicmali.ml:443/B2WBSICOrangeML/OtherWebServiceService?xsd=1" uri="wsdl/mbank.bsicmali.ml_443/B2WBSICOrangeML/OtherWebServiceService.xsd_1.xsd"/>
+    <system systemId="file:/C:/Users/alexa/Documents/EASYMBANK/BABN/newWsdl3.wsdl" uri="wsdl/newWsdl3.wsdl"/>
+    <system systemId="file:/C:/Users/alexa/Documents/EASYMBANK/BABN/wsdl_MoovBenin.wsdl" uri="wsdl/wsdl_MoovBenin.wsdl"/>
+</catalog>

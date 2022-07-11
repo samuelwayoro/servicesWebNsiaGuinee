@@ -1,0 +1,268 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is Metro/2.1.1-b09 (branches/2.1-6834; 2011-07-16T17:14:48+0000) JAXWS-RI/2.2.5-promoted-b04 JAXWS/2.2. --><xs:schema xmlns:tns="http://deploy.fasyl.xnett.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://deploy.fasyl.xnett.com/">
+
+<xs:element name="FundTransferAccountToAccount" type="tns:FundTransferAccountToAccount"/>
+
+<xs:element name="FundTransferAccountToAccountResponse" type="tns:FundTransferAccountToAccountResponse"/>
+
+<xs:element name="FundTransferAccountToMobileInquiry" type="tns:FundTransferAccountToMobileInquiry"/>
+
+<xs:element name="FundTransferAccountToMobileInquiryResponse" type="tns:FundTransferAccountToMobileInquiryResponse"/>
+
+<xs:element name="FundTransferMobileToAccountInquiry" type="tns:FundTransferMobileToAccountInquiry"/>
+
+<xs:element name="FundTransferMobileToAccountInquiryResponse" type="tns:FundTransferMobileToAccountInquiryResponse"/>
+
+<xs:element name="balanceEnquiry" type="tns:balanceEnquiry"/>
+
+<xs:element name="balanceEnquiryResponse" type="tns:balanceEnquiryResponse"/>
+
+<xs:element name="fundTransferAccountToMobile" type="tns:fundTransferAccountToMobile"/>
+
+<xs:element name="fundTransferAccountToMobileResponse" type="tns:fundTransferAccountToMobileResponse"/>
+
+<xs:element name="fundTransferMobileToAccount" type="tns:fundTransferMobileToAccount"/>
+
+<xs:element name="fundTransferMobileToAccountResponse" type="tns:fundTransferMobileToAccountResponse"/>
+
+<xs:element name="transactionEnquiry" type="tns:transactionEnquiry"/>
+
+<xs:element name="transactionEnquiryResponse" type="tns:transactionEnquiryResponse"/>
+
+<xs:complexType name="fundTransferAccountToMobile">
+<xs:sequence>
+<xs:element name="txtBankName" type="xs:string" minOccurs="0"/>
+<xs:element name="txtBranchCode" type="xs:string" minOccurs="0"/>
+<xs:element name="txtAccountNumber" type="xs:string" minOccurs="0"/>
+<xs:element name="txtBFName" type="xs:string" minOccurs="0"/>
+<xs:element name="txtBLName" type="xs:string" minOccurs="0"/>
+<xs:element name="txtAmount" type="xs:string" minOccurs="0"/>
+<xs:element name="txtCurrency" type="xs:string" minOccurs="0"/>
+<xs:element name="txtRefID" type="xs:string" minOccurs="0"/>
+<xs:element name="mydate" type="xs:string" minOccurs="0"/>
+<xs:element name="txtCountryCode" type="xs:string" minOccurs="0"/>
+<xs:element name="txtAuthNum" type="xs:string" minOccurs="0"/>
+<xs:element name="txtExternal1" type="xs:string" minOccurs="0"/>
+<xs:element name="txtExternal2" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="fundTransferAccountToMobileResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:accountToMobileXResponse" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="accountToMobileXResponse">
+<xs:complexContent>
+<xs:extension base="tns:response">
+<xs:sequence/>
+</xs:extension>
+</xs:complexContent>
+</xs:complexType>
+
+<xs:complexType name="response" abstract="true">
+<xs:sequence>
+<xs:element name="balance" type="xs:string" minOccurs="0"/>
+<xs:element name="status" type="xs:int"/>
+<xs:element name="transactionAmount" type="xs:string" minOccurs="0"/>
+<xs:element name="transactionDetails" type="xs:string" minOccurs="0"/>
+<xs:element name="transactionID" type="xs:string" minOccurs="0"/>
+<xs:element name="transactionTimeStamp" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="transactionEnquiry">
+<xs:sequence>
+<xs:element name="txtBankName" type="xs:string" minOccurs="0"/>
+<xs:element name="txtBranchCode" type="xs:string" minOccurs="0"/>
+<xs:element name="txtAccountNumber" type="xs:string" minOccurs="0"/>
+<xs:element name="txtBFName" type="xs:string" minOccurs="0"/>
+<xs:element name="txtBLName" type="xs:string" minOccurs="0"/>
+<xs:element name="txtAmount" type="xs:string" minOccurs="0"/>
+<xs:element name="txtCurrency" type="xs:string" minOccurs="0"/>
+<xs:element name="txtRefID" type="xs:string" minOccurs="0"/>
+<xs:element name="mydate" type="xs:string" minOccurs="0"/>
+<xs:element name="txtCountryCode" type="xs:string" minOccurs="0"/>
+<xs:element name="txtAuthNum" type="xs:string" minOccurs="0"/>
+<xs:element name="txtExternal1" type="xs:string" minOccurs="0"/>
+<xs:element name="txtExternal2" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="transactionEnquiryResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:transactionEnquiryXResponse" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="transactionEnquiryXResponse">
+<xs:complexContent>
+<xs:extension base="tns:response">
+<xs:sequence/>
+</xs:extension>
+</xs:complexContent>
+</xs:complexType>
+
+<xs:complexType name="FundTransferAccountToMobileInquiry">
+<xs:sequence>
+<xs:element name="txtBankName" type="xs:string" minOccurs="0"/>
+<xs:element name="txtBranchCode" type="xs:string" minOccurs="0"/>
+<xs:element name="txtAccountNumber" type="xs:string" minOccurs="0"/>
+<xs:element name="txtBFName" type="xs:string" minOccurs="0"/>
+<xs:element name="txtBLName" type="xs:string" minOccurs="0"/>
+<xs:element name="txtAmount" type="xs:string" minOccurs="0"/>
+<xs:element name="txtCurrency" type="xs:string" minOccurs="0"/>
+<xs:element name="txtRefID" type="xs:string" minOccurs="0"/>
+<xs:element name="mydate" type="xs:string" minOccurs="0"/>
+<xs:element name="txtCountryCode" type="xs:string" minOccurs="0"/>
+<xs:element name="txtAuthNum" type="xs:string" minOccurs="0"/>
+<xs:element name="txtExternal1" type="xs:string" minOccurs="0"/>
+<xs:element name="txtExternal2" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="FundTransferAccountToMobileInquiryResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:accountToMobileInquiryXResponse" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="accountToMobileInquiryXResponse">
+<xs:complexContent>
+<xs:extension base="tns:response">
+<xs:sequence/>
+</xs:extension>
+</xs:complexContent>
+</xs:complexType>
+
+<xs:complexType name="FundTransferMobileToAccountInquiry">
+<xs:sequence>
+<xs:element name="txtBankName" type="xs:string" minOccurs="0"/>
+<xs:element name="txtBranchCode" type="xs:string" minOccurs="0"/>
+<xs:element name="txtAccountNumber" type="xs:string" minOccurs="0"/>
+<xs:element name="txtBFName" type="xs:string" minOccurs="0"/>
+<xs:element name="txtBLName" type="xs:string" minOccurs="0"/>
+<xs:element name="txtAmount" type="xs:string" minOccurs="0"/>
+<xs:element name="txtCurrency" type="xs:string" minOccurs="0"/>
+<xs:element name="txtRefID" type="xs:string" minOccurs="0"/>
+<xs:element name="mydate" type="xs:string" minOccurs="0"/>
+<xs:element name="txtCountryCode" type="xs:string" minOccurs="0"/>
+<xs:element name="txtAuthNum" type="xs:string" minOccurs="0"/>
+<xs:element name="txtExternal1" type="xs:string" minOccurs="0"/>
+<xs:element name="txtExternal2" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="FundTransferMobileToAccountInquiryResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:fundTransferMobileToAccountInquiryXResponse" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="fundTransferMobileToAccountInquiryXResponse">
+<xs:complexContent>
+<xs:extension base="tns:response">
+<xs:sequence/>
+</xs:extension>
+</xs:complexContent>
+</xs:complexType>
+
+<xs:complexType name="balanceEnquiry">
+<xs:sequence>
+<xs:element name="txtBankName" type="xs:string" minOccurs="0"/>
+<xs:element name="txtBranchCode" type="xs:string" minOccurs="0"/>
+<xs:element name="txtAccountNumber" type="xs:string" minOccurs="0"/>
+<xs:element name="txtBFName" type="xs:string" minOccurs="0"/>
+<xs:element name="txtBLName" type="xs:string" minOccurs="0"/>
+<xs:element name="txtRefID" type="xs:string" minOccurs="0"/>
+<xs:element name="mydate" type="xs:string" minOccurs="0"/>
+<xs:element name="txtCountryCode" type="xs:string" minOccurs="0"/>
+<xs:element name="txtAuthNum" type="xs:string" minOccurs="0"/>
+<xs:element name="txtExternal1" type="xs:string" minOccurs="0"/>
+<xs:element name="txtExternal2" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="balanceEnquiryResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:balanceEnquiryXResponse" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="balanceEnquiryXResponse">
+<xs:complexContent>
+<xs:extension base="tns:response">
+<xs:sequence/>
+</xs:extension>
+</xs:complexContent>
+</xs:complexType>
+
+<xs:complexType name="fundTransferMobileToAccount">
+<xs:sequence>
+<xs:element name="txtBankName" type="xs:string" minOccurs="0"/>
+<xs:element name="txtBranchCode" type="xs:string" minOccurs="0"/>
+<xs:element name="txtAccountNumber" type="xs:string" minOccurs="0"/>
+<xs:element name="txtBFName" type="xs:string" minOccurs="0"/>
+<xs:element name="txtBLName" type="xs:string" minOccurs="0"/>
+<xs:element name="txtAmount" type="xs:string" minOccurs="0"/>
+<xs:element name="txtCurrency" type="xs:string" minOccurs="0"/>
+<xs:element name="txtRefID" type="xs:string" minOccurs="0"/>
+<xs:element name="mydate" type="xs:string" minOccurs="0"/>
+<xs:element name="txtCountryCode" type="xs:string" minOccurs="0"/>
+<xs:element name="txtAuthNum" type="xs:string" minOccurs="0"/>
+<xs:element name="txtExternal1" type="xs:string" minOccurs="0"/>
+<xs:element name="txtExternal2" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="fundTransferMobileToAccountResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:fundTransferMobileToAccountXResponse" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="fundTransferMobileToAccountXResponse">
+<xs:complexContent>
+<xs:extension base="tns:response">
+<xs:sequence/>
+</xs:extension>
+</xs:complexContent>
+</xs:complexType>
+
+<xs:complexType name="FundTransferAccountToAccount">
+<xs:sequence>
+<xs:element name="dBankName" type="xs:string" minOccurs="0"/>
+<xs:element name="dBranchCode" type="xs:string" minOccurs="0"/>
+<xs:element name="dAccountNumber" type="xs:string" minOccurs="0"/>
+<xs:element name="dFName" type="xs:string" minOccurs="0"/>
+<xs:element name="dLName" type="xs:string" minOccurs="0"/>
+<xs:element name="cBankName" type="xs:string" minOccurs="0"/>
+<xs:element name="cBranchCode" type="xs:string" minOccurs="0"/>
+<xs:element name="cAccountNumber" type="xs:string" minOccurs="0"/>
+<xs:element name="cFName" type="xs:string" minOccurs="0"/>
+<xs:element name="cLName" type="xs:string" minOccurs="0"/>
+<xs:element name="txtAmount" type="xs:string" minOccurs="0"/>
+<xs:element name="txtCurrency" type="xs:string" minOccurs="0"/>
+<xs:element name="txtRefID" type="xs:string" minOccurs="0"/>
+<xs:element name="mydate" type="xs:string" minOccurs="0"/>
+<xs:element name="txtCountryCode" type="xs:string" minOccurs="0"/>
+<xs:element name="smsSourceMsisdn" type="xs:string" minOccurs="0"/>
+<xs:element name="txtExternal1" type="xs:string" minOccurs="0"/>
+<xs:element name="txtExternal2" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="FundTransferAccountToAccountResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:accountToAccountXResponse" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="accountToAccountXResponse">
+<xs:complexContent>
+<xs:extension base="tns:response">
+<xs:sequence/>
+</xs:extension>
+</xs:complexContent>
+</xs:complexType>
+</xs:schema>
